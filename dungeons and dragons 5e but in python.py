@@ -8,7 +8,6 @@ c=0
 racesel="none"
 classsel="none"
 bckgsel="none"
-racesel2=""
 
 print("checking for existing character in directory")
 try:
@@ -16,7 +15,7 @@ try:
     print("existing character found")
     c+=1
 except:
-    print("no character found, skipping to character creation")
+    print("no character found, skipping to character creation\n")
 
 if c==0:
     while True:
@@ -52,6 +51,63 @@ if c==0:
                     print("dragonborn desc")
                 else:
                     print("Invalid Input")
+        elif sel=="2":
+            while True:
+                print("\n Class Selection Menu")
+                print("1. Fighter")
+                print("2. Wizard")
+                print("3. Monk")
+                print("\n enter a number to select a class or type its name to see a descrition")
+                classsel1=str(input())
+                classsel2=classsel1.lower()
+                if classsel2=="1":
+                    classsel="Fighter"
+                    break
+                elif classsel2=="2":
+                    classsel="Wizard"
+                    break
+                elif classsel2=="3":
+                    classsel="Monk"
+                    break
+                elif classsel2=="fighter":
+                    print("fighter desc")
+                elif classsel2=="wizard":
+                    print("wizard desc")
+                elif classsel2=="monk":
+                    print("monk desc")
+                else:
+                    print("Invalid Input")
+        elif sel=="3":
+            while True:
+                print("\n Background Selection Menu")
+                print("1. Noble")
+                print("2. Outlander")
+                print("3. Sage")
+                print("\n enter a number to select a background or type its name to see a descrition")
+                bckgsel1=str(input())
+                bckgsel2=bckgsel1.lower()
+                if bckgsel2=="1":
+                    bckgsel="Noble"
+                    break
+                elif bckgsel2=="2":
+                    bckgsel="Outlander"
+                    break
+                elif bckgsel2=="3":
+                    bckgsel="Sage"
+                    break
+                elif bckgsel2=="noble":
+                    print("noble desc")
+                elif bckgsel2=="outlander":
+                    print("outlander desc")
+                elif bckgsel2=="sage":
+                    print("sage desc")
+                else:
+                    print("Invalid Input")
+        elif sel=="":
+            if racesel!="none" and classsel!="none" and bckgsel!="none":
+                
+            else:
+                print("missing selections!")
         else:
             print("error")
 else:
