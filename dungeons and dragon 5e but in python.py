@@ -8,6 +8,7 @@ c=0
 racesel="none"
 classsel="none"
 bckgsel="none"
+name=""
 
 print("checking for existing character in directory")
 try:
@@ -19,7 +20,7 @@ except:
 
 if c==0:
     while True:
-        print("Character Creation Menu \n")
+        print(" Character Creation Menu \n")
         print("1. race         selected:",racesel)
         print("2. class        selected:",classsel)
         print("3. background   selected:",bckgsel)
@@ -105,10 +106,25 @@ if c==0:
                     print("Invalid Input")
         elif sel=="":
             if racesel!="none" and classsel!="none" and bckgsel!="none":
-                
+                name=input("enter your character's name")
+                print("creating character")
+                char=open("character.txt","w")
+                char.writelines([racesel,"\n",classsel,"\n",bckgsel,"\n",name])
+                char.close()
+                print("character saved")
+                break
             else:
                 print("missing selections!")
         else:
             print("error")
 else:
-    print("bruh")
+    with open ("character.txt", "r") as char:
+        data=char.read().splitlines()
+    racesel=data[0]
+    classsel=data[1]
+    bckgsel=data[2]
+    name=data[3]
+    print(racesel)
+    print(classsel)
+    print(bckgsel)
+    print(name)
