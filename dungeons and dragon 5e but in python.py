@@ -124,7 +124,8 @@ else:
     classsel=data[1]
     bckgsel=data[2]
     name=data[3]
-    print(racesel)
-    print(classsel)
-    print(bckgsel)
-    print(name)
+    #print(racesel)
+    #print(classsel)
+    #print(bckgsel)
+    #print(name)
+
