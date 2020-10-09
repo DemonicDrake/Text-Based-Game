@@ -1,0 +1,27 @@
+yagra
+ally
+32
+
+krenz
+enemy
+3
+
+cultist 1
+enemy
+11
+1:6
+
+cultist 2
+enemy
+11
+1:6
+
+cultist 3
+enemy
+11
+1:6
+
+cultist 4
+enemy
+11
+1:6

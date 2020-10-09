@@ -1,4 +1,4 @@
-Dragonborn
-Fighter
-Noble
-alduin
+Human
+Wizard
+Sage
+bruh

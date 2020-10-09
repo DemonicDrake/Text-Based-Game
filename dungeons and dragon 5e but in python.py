@@ -128,4 +128,29 @@ else:
     #print(classsel)
     #print(bckgsel)
     #print(name)
+print("You sit around a sturdy wooden table lit by a brightly burning candle and littered with plates cleared of food and half-drained tankards.")
+print("The sounds of gamblers yell-ing and d runken adventurers singing bawdy songs nearly drown out the off-key strumming of a young bard three tables over.")
+print("Then all the noise is eclipsed by a shout: 'Ya pig! Like killin' me mates, does ya?' Then a seven-foot-tall half-orc is hit by a wild,")
+print("swinging punch from a male human whose shaved head is covered with eye-shaped tattoos. Four other humans stand behind him, ready to jump Into the fray.")
+print("The half-ore cracks her knuckles, roars,  and leaps at the tattooed figure-but before you can see if blood is drawn, a crowd of spectators clusters around the brawl.")
+print("What do you do?\n")
+print("OPTIONS")
+print("1. watch")
+print("2. join the fight")
+while True:
+    wdyd=input()
+    if wdyd=="1":
+    
+    elif wdyd=="2":
+        print("you get up off your stool and join the fight...")
+        print("\n-=COMBAT-=-START=-\n")
+        print("particapants:")
+        print()
+    else:
+        print("")
 
+#TEXT FILE FORMAT
+#name
+#ally/enemy
+#hp
+#damage
